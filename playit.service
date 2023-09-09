@@ -1,0 +1,12 @@
+[Unit]
+Description=Playit.gg client
+After=network.target
+
+[Service]
+WorkingDirectory=/etc/playit
+ExecStart=/etc/playit/playit
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
